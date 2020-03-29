@@ -1,0 +1,26 @@
+{
+    "name": "cl",
+    "displayName": "CL",
+    "description": "cl language support",
+    "version": "0.0.1",
+    "publisher": "Leonid",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cl",
+            "aliases": ["CL", "cl"],
+            "extensions": [".cl",".ls",".bu",".le"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cl",
+            "scopeName": "source.cl",
+            "path": "./syntaxes/cl.tmLanguage.json"
+        }]
+    }
+}
